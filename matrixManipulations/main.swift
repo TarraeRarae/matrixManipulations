@@ -7,12 +7,6 @@
 
 import Foundation
 
-func input() -> String {
-    let keyboard = FileHandle.standardInput
-    let inputData = keyboard.availableData
-    return NSString(data: inputData, encoding:String.Encoding.utf8.rawValue)! as String
-}
-
 func initial() -> [[Int]] {
     print("Введите количество строк матрицы: ");
     let n : Int = Int(readLine() ?? "") ?? 0
